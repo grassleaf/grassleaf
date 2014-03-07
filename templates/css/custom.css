@@ -1,0 +1,406 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td {
+	margin: 0;
+	padding: 0;
+}
+html, body, #content {
+	background-color: #f1f2f3;
+}
+body, input, button, select, textarea, th, td {
+	font-size: 12px;
+	line-height: 1.5;
+	font-family: tahoma, arial, sans-serif;
+	color: #666;
+}
+div, a {
+	display: block;
+}
+ul, ol {
+	list-style: none;
+}
+a:hover {
+	cursor: pointer;
+}
+.pull-left {
+	display: inline;
+	float: left !important;
+}
+.cy-nav {
+	width: 100%;
+	height: 58px;
+}
+.cy-nav .cy-nav-wrap {
+	z-index: 10001;
+	position: fixed;
+	left: 0px;
+	right: auto;
+	width: 100%;
+	height: 58px;
+	background-color: #F7F8ED;
+}
+.cy-nav .cy-nav-wrap .cy-nav-bd {
+	width: 1070px;
+	margin: 0 auto;
+	height: 57px;
+	font-size: 14px;
+}
+.cy-nav .cy-nav-wrap .cy-nav-ft {
+	height: 1px;
+	background-color: #000000;
+	opacity: 0.12;
+	z-index: 1001;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+}
+.cy-nav .cy-nav-bd a {
+	color: #666;
+	text-decoration: none;
+}
+.cy-nav .cy-nav-bd .cy-logo {
+	float: left;
+}
+.cy-nav .cy-nav-bd .cy-logo {
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+	border-radius: 0 0 2px 2px;
+	font-size: 36px;
+	text-align: center;
+	height: 58px;
+	margin-right: 18px;
+	position: relative;
+	width: 106px;
+}
+.cy-nav .cy-nav-bd .cy-logo a {
+	display: block;
+	height: 100%;
+	line-height: 58px;
+	overflow: hidden;
+	width: 100%;
+	color: #2BC02B;
+}
+.cy-nav .cy-nav-bd-l,
+.cy-nav .cy-nav-bd-l .menu {
+	display: inline;
+	float: left;
+}
+.cy-nav .cy-nav-bd-l .menu .menu-hd {
+	width: 68px;
+	height: 58px;
+	line-height: 58px;
+	text-align: center;
+	cursor: pointer;
+}
+.cy-nav .cy-nav-bd-l .menu {
+	z-index: 1002;
+	position: relative;
+	padding: 0 12px;
+	height: 58px;
+	line-height: 58px;
+}
+.cy-nav .cy-nav-bd-l .menu a {
+	display: inline;
+	float: left;
+	margin-right: 12px;
+}
+.cy-nav .cy-nav-bd .menu-bd {
+	z-index: 1001;
+	position: relative;
+	display: none;
+	margin-top: -1px;
+}
+.cy-nav .cy-nav-bd .menu-hover .menu-hd {
+	z-index: 1001;
+	height: 58px;
+	background-color: #fff;
+}
+.cy-nav .cy-nav-bd .menu-hover .menu-bd {/*当鼠标悬浮时显示*/
+	display: block;
+}
+.cy-nav-bd .menu-bd .menu-bd-panel {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 18px 8px;
+	line-height: normal;
+	border: 1px solid #eee;
+	border-top-width: 0;
+	background-color: #fff;
+}
+.cy-nav-bd .nav-cat .menu-bd .menu-bd-panel {
+	overflow: hidden;
+	left: 0;
+	right: auto;
+}
+.menu-bd .menu-bd-panel .mod {
+	display: inline;
+	float: left;
+	overflow: hidden;
+	position: relative;
+}
+.menu-bd .menu-bd-panel .mod li a:hover {
+	text-decoration: underline;
+}
+.menu-bd-panel .mod-a {
+	float: left;
+	width: 35%;
+	padding-top: 6px;
+}
+.menu-bd .menu-bd-panel .mod-a li {
+	display: block;
+	height: 42px;
+}
+.menu-bd .menu-bd-panel .mod-a li a{
+	position: relative;
+	display: inline;
+	float: left;
+	height: 25px;
+	line-height: 25px;
+	margin: 0 10px;
+	padding: 0 8px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	text-align: center;
+}
+.menu-bd .menu-bd-panel .mod-vline {
+	background-color: #EBEBEB;
+	position: absolute;
+	left: 80px;
+	height: 126px;
+	margin-top: 10px;
+	width: 1px;
+}
+.menu-bd .menu-bd-panel .mod-b {
+	float: left;
+	width: 65%;
+	padding-top: 10px;
+}
+.menu-bd .menu-bd-panel .mod-b ul {
+	display: block;
+	height: 34px;
+	padding-top: 6px 0;
+}
+.menu-bd .menu-bd-panel .mod-b li {
+	display: inline;
+	float: left;
+	margin-right: 4px;
+}
+.cy-nav .cy-nav-bd i {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	margin-top: 14px;
+	margin-left: 1px;
+	background-image: url("http://cdn.duitang.com/uploads/people/201312/24/20131224174700_CXfn4.png");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	-webkit-transition: -webkit-transform 0.2s ease-out;
+}
+/*搜索框*/
+.cy-nav .cy-nav-bd .cy-search {
+	float: left;
+	margin-left: 32px;
+	margin-top: 12px;
+	border: 1px solid #c5c5c5;
+	position: relative;
+	z-index: 900;
+}
+.cy-nav .cy-search form {
+	position: relative;
+	background-color: #fff;
+	width: 340px;
+	height: 30px;
+}
+.cy-search .search-wrap {
+	display: inline-block;
+	vertical-align: top;
+	height: 30px;
+	line-height: 30px;
+	padding: 0 0 0 10px;
+	background-color: #fff;
+}
+.cy-search .inp {
+	height: 30px;
+	line-height: 20px;
+	border: 0;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+	vertical-align: top;
+}
+.cy-search input {
+	border: 0 none;
+	width: 290px;
+}
+.cy-search .search-wrap .search-icon {
+	font-size: 12px;
+	width: 36px;
+	color: #666;
+	height: 30px;
+	border: 0;
+	background: 0;
+	cursor: pointer;
+	border-left: 1px solid #eee;
+	background: #fff url("http://csdnimg.cn/www/images/ico_sear_top.gif") no-repeat 10px 8px;
+}
+.cy-nav .cy-nav-bd-r,
+.cy-nav .cy-nav-bd-r .cy-nav-btn {
+	display: inline;
+	float: right;
+}
+.cy-nav .cy-nav-bd-r .cy-head {
+	float: right;
+	line-height: 58px;
+	margin-left: 25px;
+	margin-right: 25px;
+	text-align: center;
+	text-decoration: none;
+}
+.cy-nav .cy-nav-bd-r .cy-head span {
+	float: left;
+	margin-left: 8px;
+	margin-right: 8px;
+}
+#cy-account .cy-avatar {
+	border-radius: 36px;
+	float: left;
+	height: 36px;
+	margin: 13px 0 0;
+	transition: webkit-transform 0.4 ease-out 0s;
+	width: 36px;
+}
+.cy-nav .cy-vline {
+	background-color: #EBEBEB;
+	float: right;
+	height: 26px;
+	margin-top: 20px;
+	width: 1px;
+}
+/*用户下拉框*/
+.account-bd {
+	z-index: 1001;
+	position: relative;
+	display: none;
+	margin-top: -1px;
+}
+.account-hover .account-bd {
+	display: block;
+}
+.account-hover .account-bd .account-bd-panel {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 0;
+	line-height: normal;
+	border: 1px solid #eee;
+	border-top-width: 0;
+	background-color: #fff;
+}
+.account-hover .cy-has-menu .account-bd .account-bd-panel {
+	overflow: hidden;
+	left: 0;
+	right: auto;
+}
+.account-hover .account-bd-panel ul {
+	border-bottom: 1px solid #eee;
+	margin-bottom: 6px;
+}
+.account-hover .account-bd-panel .logout {
+	margin: 6px 0;
+	border-width: 0;
+}
+.account-hover .account-bd-panel ul li a{
+	height: 32px;
+	line-height: 32px;
+}
+.account-hover .account-bd-panel ul li a:hover {
+	background-color: #D5D5D5;
+}
+#content {
+	width: 100%;
+	min-height: 450px;
+	padding-bottom: 24px;
+}
+.cy-wrap {
+	width: 1070px;
+	margin: 0 auto;
+	padding-top: 32px;
+}
+.clearfix {
+	zoom: 1;
+}
+#CyCarousel, .cy-carousel-img {
+	width: 702px;
+	height: 500px;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+#CyCarousel {
+	position: relative;
+	overflow: hidden;
+	background-color: #fff;
+}
+.cy-wrap .main-top-r {
+	margin-left: 23px;
+	width: 345px;
+	height: 500px;
+}
+.cy-wrap .cy-enter {
+	width: 100%;
+	height: 120px;
+	margin-bottom: 20px;
+	padding: 24px;
+	background-color: #fff;
+}
+.cy-wrap .cy-enter .user-img {
+	float: left;
+	margin-right: 16px;
+}
+.cy-wrap .cy-enter .user-img img {
+	width: 67px;
+	width: 67px;
+	border-radius: 3px;
+}
+.cy-wrap .cy-enter .logged-right {
+	float: left;
+	/*width: 206px;*/
+}
+.cy-wrap .cy-enter .logged-right span {
+	display: inline-block;
+	padding-top: 4px;
+	font-size: 18px;
+	cursor: pointer;
+}
+#CyHots {
+	width: 100%;
+	height: 360px;
+	padding: 9px;
+	background-color: #fff;
+}
+.main-center .cy-block {
+	margin-top: 40px;
+	border-top: 1px solid #d4d5d5;
+}
+.main-center .cy-block h2 {
+	padding: 30px 0;
+	font-size: 18px;
+	color: #444444;
+}
+.side-combo {
+	position: fixed;
+	display: block;
+	z-index: 10000;
+	width: 48px;
+	height: 100px;
+	bottom: 50px;
+	right: 10px;
+	top: auto;
+	opacity: 1;
+}
+.side-combo .side-combo-bd {
+	border-left: 1px solid #dedfe0;
+	border-right: 1px solid #dedfe0;
+}
+.side-combo-bd a.go-top {
+	display:block;
+	width:46px;
+	height:47px;
+	text-decoration:none;
+	border-top: 1px solid #dedfe0;
+}

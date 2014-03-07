@@ -1,0 +1,63 @@
+/*清除默认样式*/
+
+/* Carousel base class */
+
+.carousel {
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+
+.carousel .item {
+  height: 450px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 400px;
+}
+
+.thumbnail{
+	margin-bottom: 30px;
+}
+/*--菜单分类部分----*/
+li {
+	list-style-type: none;
+	color: rgb(132, 132, 132);
+}
+a {
+	color: rgb(132, 132, 132);
+}
+button {
+	color: rgb(132, 132, 132)!important;
+}
+/*将导航栏色css进行覆盖*/
+.navbar-inverse .navbar-nav > li > a {
+	color: hsl(0, 100%, 100%);
+	background-color: hsla(0, 0%, 0%, 0);
+}
+.navbar-inverse .navbar-nav > li > a:hover, 
+.navbar-inverse .navbar-nav > li > a:focus {
+	color: hsl(180, 69%, 53%);
+	background-color: hsla(0, 0%, 0%, 0);
+}
+.catagry-theme ul,.popular-theme ul {
+	margin: 0px;
+	padding: 0px;
+}
+.catagry-theme li,.popular-theme li {
+	display: inline-block;
+	margin: 8px;
+}
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+	background-color: hsl(0, 0%, 0%)!important;
+}
